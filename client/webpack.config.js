@@ -23,7 +23,11 @@ module.exports = () => {
 
     module: {
       rules: [
-        
+        {
+          //add css loader
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
+        }        
       ],
     },
   };
